@@ -35,6 +35,7 @@ namespace HeadForSuccess
             newAthlete.Name = name;
             db.Insert(newAthlete);
         } 
+<<<<<<< HEAD
          
         // Needs exception handling
         public Athlete getAthlete(String name)
@@ -47,6 +48,13 @@ namespace HeadForSuccess
         { 
             db.Delete<Athlete>(name);
         }
+=======
+
+        //public Athlete getAthlete(String name)
+        //{
+        //    var existingItem = db.Get<Athlete>(name);
+        //}
+>>>>>>> 89ab4955bee3778312b732de9a7344fd34ea840f
 
         [Table("Athletes")]
         public class Athlete

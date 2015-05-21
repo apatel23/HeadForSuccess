@@ -62,6 +62,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="MonoTouch.NUnitLite" />
     <Reference Include="SQLite">
       <HintPath>..\SQLite.dll</HintPath>
     </Reference>
@@ -88,6 +89,7 @@
     <Compile Include="DataBase.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="UnitTests.cs" />
     <Compile Include="ViewController1.cs" />
     <Compile Include="ViewController1.designer.cs">
       <DependentUpon>ViewController1.cs</DependentUpon>
