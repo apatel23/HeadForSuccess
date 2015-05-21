@@ -13,30 +13,43 @@ namespace HeadForSuccess
    
         private SQLiteConnection db;
         private const String DB_NAME = "Database.sqlite"; 
-        private const int MAX_NAME_LENGTH = 30;
+        public const int MAX_NAME_LENGTH = 30;
          
         Database()
         {
             connectToDatabase(); 
             //Comment out below if not testing// 
-            addAthletes();
-            printAthletes();
+            //addAthletes();
+            //printAthletes();
         } 
 
-        public void connectToDatabase() 
+        private void connectToDatabase() 
         { 
             string dBPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), DB_NAME);
             db = new SQLiteConnection(dBPath);
+        } 
+
+        public void addAthlete(String name)
+        {
+            var newAthlete = new Athlete();
+            newAthlete.Name = name;
+            db.Insert(newAthlete);
+        } 
+
+        public Athlete getAthlete(String name)
+        {
+            var existingItem = db.Get<Athlete>(name);
         }
 
         [Table("Athletes")]
         private class Athlete
         {
-            [PrimaryKey, AutoIncrement, Column("_id")]
-            public int Id { get; set; }
-            [MaxLength(MAX_NAME_LENGTH)]
+            //[PrimaryKey, AutoIncrement, Column("_id")]
+            //public int Id { get; set; }
+            [PrimaryKey, MaxLength(MAX_NAME_LENGTH)]
             public string Name { get; set; }
-        } 
+        }   
+
            
         /////////////////////////////////////////////////////////////TEST METHODS////////////////////////////////////////////////////////// 
 
@@ -45,12 +58,12 @@ namespace HeadForSuccess
         {
             if(db.Table<Athlete>().Count() == 0)
             {
-                var newStock = new Athlete();
-                newStock.Name = "Bob";
-                db.Insert(newStock);
-                newStock = new Athlete();
-                newStock.Name = "Jill";
-                db.Insert(newStock);
+                var newAthlete = new Athlete();
+                newAthlete.Name = "Bob";
+                db.Insert(newAthlete);
+                newAthlete = new Athlete();
+                newAthlete.Name = "Jill";
+                db.Insert(newAthlete);
             }
         } 
 
@@ -59,9 +72,9 @@ namespace HeadForSuccess
         {
             Console.WriteLine("Reading data");
             var table = db.Table<Athlete>(); 
-            foreach(var s in table)
+            foreach(var a in table)
             {
-                Console.WriteLine(s.Id + " " + s.Name);
+                Console.WriteLine(a.Name);
             }
         }
         
