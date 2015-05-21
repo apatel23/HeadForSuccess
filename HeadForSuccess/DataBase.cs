@@ -30,23 +30,25 @@ namespace HeadForSuccess
         }
 
         [Table("Athletes")]
-        private class Stock
+        private class Athlete
         {
             [PrimaryKey, AutoIncrement, Column("_id")]
             public int Id { get; set; }
             [MaxLength(MAX_NAME_LENGTH)]
             public string Name { get; set; }
         } 
-         
+           
+        /////////////////////////////////////////////////////////////TEST METHODS////////////////////////////////////////////////////////// 
+
         ///Test Add/// 
         public void addAthletes()
         {
-            if(db.Table<Stock>().Count() == 0)
+            if(db.Table<Athlete>().Count() == 0)
             {
-                var newStock = new Stock();
+                var newStock = new Athlete();
                 newStock.Name = "Bob";
                 db.Insert(newStock);
-                newStock = new Stock();
+                newStock = new Athlete();
                 newStock.Name = "Jill";
                 db.Insert(newStock);
             }
@@ -56,7 +58,7 @@ namespace HeadForSuccess
         public void printAthletes() 
         {
             Console.WriteLine("Reading data");
-            var table = db.Table<Stock>(); 
+            var table = db.Table<Athlete>(); 
             foreach(var s in table)
             {
                 Console.WriteLine(s.Id + " " + s.Name);
