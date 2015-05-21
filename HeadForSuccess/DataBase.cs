@@ -9,8 +9,8 @@ using System.IO;
 
 namespace HeadForSuccess
 {
-    public class Database
-    {
+    public class Database{
+   
         private SQLiteConnection db;
         private const String DB_NAME = "Database.sqlite"; 
         private const int MAX_NAME_LENGTH = 30;
