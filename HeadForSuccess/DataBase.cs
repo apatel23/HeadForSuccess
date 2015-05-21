@@ -12,14 +12,15 @@ namespace HeadForSuccess
 
     class DataBase
     {
-        static void Main(string[] args)
-        {
-            // if you want to use a different Application Delegate class from "AppDelegate"
-            // you can specify it here.
-            DataBase dB = new DataBase();
-            Console.ReadLine();
-
-        }
+		// Main for testing
+//        static void Main(string[] args)
+//        {
+//            // if you want to use a different Application Delegate class from "AppDelegate"
+//            // you can specify it here.
+//            DataBase dB = new DataBase();
+//            Console.ReadLine();
+//
+//        }
 
         static String DB_PATH = "/Data/";
         static String DB_NAME = "DataBase.sqlite";
