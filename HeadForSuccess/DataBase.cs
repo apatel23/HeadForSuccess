@@ -3,109 +3,69 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Foundation;
-using UIKit; 
-using System.Data.SQLite;
-using System.Data;
+using UIKit;
+using SQLite;
+using System.IO;
 
 namespace HeadForSuccess
 {
-
-    class DataBase
+    public class Database
     {
-        static void Main(string[] args)
+        private SQLiteConnection db;
+        private const String DB_NAME = "Database.sqlite"; 
+        private const int MAX_NAME_LENGTH = 30;
+         
+        Database()
         {
-            // if you want to use a different Application Delegate class from "AppDelegate"
-            // you can specify it here.
-            DataBase dB = new DataBase();
-            Console.ReadLine();
+            connectToDatabase(); 
+            //Comment out below if not testing// 
+            addAthletes();
+            printAthletes();
+        } 
 
+        public void connectToDatabase() 
+        { 
+            string dBPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), DB_NAME);
+            db = new SQLiteConnection(dBPath);
         }
 
-        static String DB_PATH = "/Data/";
-        static String DB_NAME = "DataBase.sqlite";
-
-        SQLiteConnection dataBase;
-
-        DataBase()
+        [Table("Athletes")]
+        private class Stock
         {
-            createNewDataBase();
-            //connectToDataBase();
-            //createTable();
-            fillTable();
-            printNames();
-        }
-
-        void createNewDataBase()
+            [PrimaryKey, AutoIncrement, Column("_id")]
+            public int Id { get; set; }
+            [MaxLength(MAX_NAME_LENGTH)]
+            public string Name { get; set; }
+        } 
+         
+        ///Test Add/// 
+        public void addAthletes()
         {
-            dataBase = new SQLiteConnection("Data Source=" + DB_NAME + ";Version=3;");
-            Boolean dbExist = existDataBase();
-
-            if (!dbExist)
+            if(db.Table<Stock>().Count() == 0)
             {
-                SQLiteConnection.CreateFile(DB_NAME);
-                dataBase = new SQLiteConnection("Data Source=" + DB_NAME + ";Version=3;");
-                dataBase.Open();
-                createTable();
+                var newStock = new Stock();
+                newStock.Name = "Bob";
+                db.Insert(newStock);
+                newStock = new Stock();
+                newStock.Name = "Jill";
+                db.Insert(newStock);
             }
-            else
+        } 
+
+        ///Test Print/// 
+        public void printAthletes() 
+        {
+            Console.WriteLine("Reading data");
+            var table = db.Table<Stock>(); 
+            foreach(var s in table)
             {
-                dataBase = new SQLiteConnection("Data Source=" + DB_NAME + ";Version=3;");
-                dataBase.Open();
+                Console.WriteLine(s.Id + " " + s.Name);
             }
-
-
         }
-
-        public bool existDataBase()
-        {
-            Boolean checkDB = true;
-            using (var connection = new SQLiteConnection(dataBase.ConnectionString))
-            {
-                try
-                {
-                    connection.Open();
-                }
-                catch (Exception)
-                {
-                    checkDB = false;
-                }
-            }
-
-            return checkDB;
-        }
-
-        //void connectToDataBase()
-        //{
-        //    dataBase = new SQLiteConnection("Data Source=DataBase.sqlite;Version=3;");
-        //    dataBase.Open();
-        //} 
-
-        void createTable()
-        {
-            string sql = "create table clients (name varechar(20))";
-            SQLiteCommand command = new SQLiteCommand(sql, dataBase);
-            command.ExecuteNonQuery();
-        }
-
-        void fillTable()
-        {
-            string sql = "insert into clients (name) values ('h')";
-            SQLiteCommand command = new SQLiteCommand(sql, dataBase);
-            command.ExecuteNonQuery();
-            sql = "insert into clients (name) values ('t')";
-            command = new SQLiteCommand(sql, dataBase);
-            command.ExecuteNonQuery();
-        }
-
-        void printNames()
-        {
-            string sql = "select * from clients order by name asc";
-            SQLiteCommand command = new SQLiteCommand(sql, dataBase);
-            SQLiteDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-                Console.WriteLine("Name: " + reader["name"]);
-            Console.ReadLine();
-        }
-
+        
     }
+
+    
+
+  
 }
