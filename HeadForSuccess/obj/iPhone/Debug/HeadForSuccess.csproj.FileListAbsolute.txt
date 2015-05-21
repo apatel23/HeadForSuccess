@@ -1,7 +1,5 @@
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\HeadForSuccess.exe
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\HeadForSuccess.pdb
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\System.Data.SQLite.dll
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\System.Data.SQLite.xml
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhone\Debug\
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhone\Debug\HeadForSuccess.csprojResolveAssemblyReference.cache
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhone\Debug\HeadForSuccess.exe
@@ -13,3 +11,4 @@ C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuc
 C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\HeadForSuccess.exe
 C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\HeadForSuccess.pdb
 C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\SQLite.dll
+C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhone\Debug\SQLite.dll
