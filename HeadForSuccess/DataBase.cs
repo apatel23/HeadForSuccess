@@ -36,10 +36,10 @@ namespace HeadForSuccess
             db.Insert(newAthlete);
         } 
 
-        public Athlete getAthlete(String name)
-        {
-            var existingItem = db.Get<Athlete>(name);
-        }
+        //public Athlete getAthlete(String name)
+        //{
+        //    var existingItem = db.Get<Athlete>(name);
+        //}
 
         [Table("Athletes")]
         private class Athlete

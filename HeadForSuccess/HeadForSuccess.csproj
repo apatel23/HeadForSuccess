@@ -62,8 +62,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="MonoTouch.NUnitLite" />
     <Reference Include="SQLite">
-      <HintPath>..\..\..\Xamarin Components\sqlite-net-1.0.8.3\lib\ios\SQLite.dll</HintPath>
+      <HintPath>..\SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -91,6 +92,7 @@
     <Compile Include="DataBase.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="UnitTests.cs" />
     <Compile Include="ViewController1.cs" />
     <Compile Include="ViewController1.designer.cs">
       <DependentUpon>ViewController1.cs</DependentUpon>
