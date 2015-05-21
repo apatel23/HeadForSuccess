@@ -15,9 +15,9 @@ namespace HeadForSuccess
         private const String DB_NAME = "Database.sqlite"; 
         public const int MAX_NAME_LENGTH = 30;
          
-        Database()
+        public Database()
         {
-            connectToDatabase(); 
+            connectToDatabase();
             //Comment out below if not testing// 
             //addAthletes();
             //printAthletes();
@@ -35,22 +35,26 @@ namespace HeadForSuccess
             newAthlete.Name = name;
             db.Insert(newAthlete);
         } 
-
+         
+        // Needs exception handling
         public Athlete getAthlete(String name)
         {
-            var existingItem = db.Get<Athlete>(name);
+            return db.Get<Athlete>(name);  
+        } 
+         
+        // Needs exceptin handling
+        public void removeAthlete(String name)
+        { 
+            db.Delete<Athlete>(name);
         }
 
         [Table("Athletes")]
-        private class Athlete
+        public class Athlete
         {
-            //[PrimaryKey, AutoIncrement, Column("_id")]
-            //public int Id { get; set; }
             [PrimaryKey, MaxLength(MAX_NAME_LENGTH)]
             public string Name { get; set; }
         }   
 
-           
         /////////////////////////////////////////////////////////////TEST METHODS////////////////////////////////////////////////////////// 
 
         ///Test Add/// 
@@ -79,8 +83,6 @@ namespace HeadForSuccess
         }
         
     }
-
-    
 
   
 }
