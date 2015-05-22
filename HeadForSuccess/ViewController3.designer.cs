@@ -16,13 +16,45 @@ namespace HeadForSuccess
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel Label3 { get; set; }
+		UILabel CurrentPos { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel deg { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel ManualPos { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField Position { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton SetPos { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (Label3 != null) {
-				Label3.Dispose ();
-				Label3 = null;
+			if (CurrentPos != null) {
+				CurrentPos.Dispose ();
+				CurrentPos = null;
+			}
+			if (deg != null) {
+				deg.Dispose ();
+				deg = null;
+			}
+			if (ManualPos != null) {
+				ManualPos.Dispose ();
+				ManualPos = null;
+			}
+			if (Position != null) {
+				Position.Dispose ();
+				Position = null;
+			}
+			if (SetPos != null) {
+				SetPos.Dispose ();
+				SetPos = null;
 			}
 		}
 	}

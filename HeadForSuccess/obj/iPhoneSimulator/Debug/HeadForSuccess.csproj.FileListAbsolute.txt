@@ -1,7 +1,0 @@
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhoneSimulator\Debug\HeadForSuccess.exe
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhoneSimulator\Debug\HeadForSuccess.pdb
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\bin\iPhoneSimulator\Debug\SQLite.dll
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhoneSimulator\Debug\
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhoneSimulator\Debug\HeadForSuccess.exe
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhoneSimulator\Debug\HeadForSuccess.pdb
-C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\HeadForSuccess\obj\iPhoneSimulator\Debug\HeadForSuccess.csprojResolveAssemblyReference.cache
