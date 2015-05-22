@@ -28,6 +28,10 @@ namespace HeadForSuccess
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UINavigationBar NavBarPosition { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField Position { get; set; }
 
 		[Outlet]
@@ -47,6 +51,10 @@ namespace HeadForSuccess
 			if (ManualPos != null) {
 				ManualPos.Dispose ();
 				ManualPos = null;
+			}
+			if (NavBarPosition != null) {
+				NavBarPosition.Dispose ();
+				NavBarPosition = null;
 			}
 			if (Position != null) {
 				Position.Dispose ();

@@ -43,7 +43,7 @@ namespace HeadForSuccess
             return db.Get<Athlete>(name);  
         } 
          
-        // Needs exceptin handling
+        // Needs exception handling
         public void removeAthlete(String name)
         { 
             db.Delete<Athlete>(name);

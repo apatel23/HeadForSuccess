@@ -1,9 +1,27 @@
+<<<<<<< HEAD
+﻿<Properties StartupItem="HeadForSuccess/HeadForSuccess.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.3" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="HeadForSuccess/Main.cs" Line="1" Column="1" />
+      <File FileName="HeadForSuccess/DataBase.cs" Line="47" Column="47" />
+=======
 ﻿<Properties StartupItem="HeadForSuccess\HeadForSuccess.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HeadForSuccess\DataBase.cs">
     <Files>
       <File FileName="HeadForSuccess\DataBase.cs" Line="11" Column="2" />
+>>>>>>> c0d8e154d23cfe09ba008f0ca75f680960f3bacf
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HeadForSuccess" expanded="True">
+            <Node name="HeadForSuccess" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
