@@ -1,2 +1,8 @@
 HeadForSuccess.v12.suo
 HeadForSuccess.userprefs
+*.pidb
+*.userprefs
+*.swp
+*.DS_Store
+*.nib
+*.suo
