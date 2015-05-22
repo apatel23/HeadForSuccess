@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="HeadForSuccess/HeadForSuccess.csproj">
+﻿<Properties StartupItem="HeadForSuccess\HeadForSuccess.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.3" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HeadForSuccess/Main.cs">
     <Files>
