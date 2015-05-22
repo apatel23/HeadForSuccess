@@ -11,18 +11,18 @@ namespace HeadForSuccess
 		{
 		}
 
-		partial void InitialActionCompleted (UIButton sender)
-		{
-			aButton.Hidden = true;  
-		}
-
-		public override void ViewDidLoad ()
-		{
-			if (ParentViewController != null){
-				aButton.Hidden = true;
-			}
-
-		}
+//		partial void InitialActionCompleted (UIButton sender)
+//		{
+//			aButton.Hidden = true;  
+//		}
+//
+//		public override void ViewDidLoad ()
+//		{
+//			if (ParentViewController != null){
+//				aButton.Hidden = true;
+//			}
+//
+//		}
 
 	}
 }

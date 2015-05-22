@@ -11,19 +11,11 @@ using UIKit;
 
 namespace HeadForSuccess
 {
-	[Register ("ViewController1")]
-	partial class ViewController1
+	[Register ("AthleteTableView")]
+	partial class AthleteTableView
 	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton aButton { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
-			if (aButton != null) {
-				aButton.Dispose ();
-				aButton = null;
-			}
 		}
 	}
 }
