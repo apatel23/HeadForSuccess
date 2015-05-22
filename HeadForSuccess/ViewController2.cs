@@ -9,6 +9,7 @@ namespace HeadForSuccess
 	{
 		public ViewController2 (IntPtr handle) : base (handle)
 		{
+			
 		}
 	}
 }

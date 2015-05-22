@@ -20,6 +20,10 @@ namespace HeadForSuccess
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton GoSetPos { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel Label1 { get; set; }
 
 		[Action ("InitialActionCompleted:")]
@@ -31,6 +35,10 @@ namespace HeadForSuccess
 			if (aButton != null) {
 				aButton.Dispose ();
 				aButton = null;
+			}
+			if (GoSetPos != null) {
+				GoSetPos.Dispose ();
+				GoSetPos = null;
 			}
 			if (Label1 != null) {
 				Label1.Dispose ();
