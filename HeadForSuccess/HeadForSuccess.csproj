@@ -62,7 +62,8 @@
   <ItemGroup>
     <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="MonoTouch.NUnitLite" />
-    <Reference Include="SQLite">
+    <Reference Include="SQLite, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System" />

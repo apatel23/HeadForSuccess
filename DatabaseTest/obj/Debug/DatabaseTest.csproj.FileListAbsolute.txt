@@ -6,3 +6,11 @@ C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTe
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.csprojResolveAssemblyReference.cache
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.dll
 C:\Users\KING-BP\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.pdb
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\bin\Debug\DatabaseTest.dll
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\bin\Debug\DatabaseTest.pdb
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\bin\Debug\HeadForSuccess.exe
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\bin\Debug\SQLite.dll
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\bin\Debug\HeadForSuccess.pdb
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.csprojResolveAssemblyReference.cache
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.dll
+C:\Users\Wheatly\Documents\Visual Studio 2013\Projects\HeadForSuccess\DatabaseTest\obj\Debug\DatabaseTest.pdb
